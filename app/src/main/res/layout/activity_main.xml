@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_fold_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#d95f49" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#db8438" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#edc233" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#64c271" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#489ad8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#4fc1e9"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="ScrollView / ViewPager Test"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_platinum"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#db8438"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Platinum M"
+                    android:textColor="#fff" />
+
+                <com.example.intiniteviewpager.PagerContainer
+                    android:id="@+id/pager_container_platinum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000" >
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+                </com.example.intiniteviewpager.PagerContainer>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_special"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#edc233"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Special M"
+                    android:textColor="#fff" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_container_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_alzza"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#64c271"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Alzza M"
+                    android:textColor="#fff" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_container_alzza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_narae"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#489ad8"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Narae M"
+                    android:textColor="#fff" />
+
+                <com.example.intiniteviewpager.PagerContainer
+                    android:id="@+id/pager_container_narae"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000" >
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="#00000000" />
+                </com.example.intiniteviewpager.PagerContainer>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
